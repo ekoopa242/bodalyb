@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boda Luis & Blanca</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="monogram">LB</div>
+      <p class="subtitle">Nos casamos</p>
+      <h1>Luis <span>&</span> Blanca</h1>
+      <p class="date">05 septiembre 2026</p>
+      <div class="scroll-down">↓</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="intro section-card">
+      <p class="section-label">Con mucha alegría</p>
+      <h2>Queremos compartir este día contigo</h2>
+      <p>Será un honor contar con tu presencia en uno de los momentos más importantes de nuestra historia.</p>
+    </section>
+
+    <section class="section-card">
+      <p class="section-label">Faltan</p>
+      <h2>Cuenta regresiva</h2>
+      <div class="countdown">
+        <div><span id="dias">0</span><small>Días</small></div>
+        <div><span id="horas">0</span><small>Horas</small></div>
+        <div><span id="minutos">0</span><small>Min</small></div>
+        <div><span id="segundos">0</span><small>Seg</small></div>
+      </div>
+    </section>
+
+    <section class="accordion">
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Ceremonia</span>
+          <small>Ver detalles</small>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Sábado 05 de septiembre de 2026</strong></p>
+          <p>5:00 PM</p>
+          <p>UNICAH Santiago Apóstol</p>
+          <a href="#" class="gold-btn">Ver ubicación</a>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Celebración</span>
+          <small>Ver detalles</small>
+        </button>
+        <div class="accordion-content">
+          <p><strong>Sábado 05 de septiembre de 2026</strong></p>
+          <p>7:00 PM</p>
+          <p>Salón Colegio de Abogados</p>
+          <a href="#" class="gold-btn">Ver ubicación</a>
+        </div>
+      </div>
+
+      <section class="section-card">
+
+    <p class="section-label">Nuestros momentos</p>
+
+    <h2>Galería</h2>
+
+    <div class="swiper galeriaSwiper">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img src="assets/img/galeria/foto1.jpg" class="gallery-item">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/img/galeria/foto2.jpg" class="gallery-item">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/img/galeria/foto3.jpg" class="gallery-item">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/img/galeria/foto4.jpg" class="gallery-item">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/img/galeria/foto5.jpg" class="gallery-item">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/img/galeria/foto6.jpg" class="gallery-item">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/img/galeria/foto7.jpg" class="gallery-item">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/img/galeria/foto8.jpg" class="gallery-item">
+            </div>
+
+            <div class="swiper-slide">
+                <img src="assets/img/galeria/foto9.jpg" class="gallery-item">
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Dress Code</span>
+          <small>Ver imagen</small>
+        </button>
+        <div class="accordion-content">
+          <p>Formal elegante</p>
+          <img src="assets/img/dress-code.jpg" alt="Dress Code" class="dress-img">
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+            <span>Tips y notas</span>
+            <small>Ver información</small>
+        </button>
+
+        <div class="accordion-content">
+            <p><strong>Información importante para nuestros invitados</strong></p>
+            <p>Te recomendamos llegar con algunos minutos de anticipación.</p>
+            <p>Por favor tomar en cuenta el código de vestimenta formal elegante.</p>
+            <p>La confirmación de asistencia estará disponible hasta el 01 de agosto de 2026.</p>
+            <p>Gracias por acompañarnos en este día tan especial.</p>
+        </div>
+        </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>Mesa de regalos</span>
+          <small>Ver cuentas</small>
+        </button>
+        <div class="accordion-content">
+          <p>Tu presencia será nuestro mejor regalo.</p>
+
+          <div class="bank-card">
+            <p><strong>BAC</strong></p>
+            <p id="bacCuenta">751034311</p>
+            <button type="button" onclick="copiarCuenta('bacCuenta')">Copiar cuenta</button>
+          </div>
+
+          <div class="bank-card">
+            <p><strong>Occidente</strong></p>
+            <p id="occidenteCuenta">21-416-016787-9</p>
+            <button type="button" onclick="copiarCuenta('occidenteCuenta')">Copiar cuenta</button>
+          </div>
+
+          <p><strong>A nombre de:</strong><br>Blanca Estrella Alemán Cardoza</p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section-card">
+      <p class="section-label">RSVP</p>
+      <h2>Confirmar asistencia</h2>
+      <p class="limit-date">Por favor confirmar antes del 01 de agosto de 2026.</p>
+
+      <form name="rsvp" method="POST" data-netlify="true" netlify class="form">
+        <input type="hidden" name="form-name" value="rsvp">
+
+        <input type="text" name="nombre" placeholder="Nombre completo" required>
+
+        <select name="asistencia" required>
+          <option value="">¿Asistirás?</option>
+          <option value="Sí asistiré">Sí asistiré</option>
+          <option value="No podré asistir">No podré asistir</option>
+        </select>
+
+        <textarea name="comentario" placeholder="Comentario adicional"></textarea>
+
+        <button type="submit">Confirmar asistencia</button>
+      </form>
+    </section>
+
+    <section class="section-card final">
+      <div class="monogram small-logo">LB</div>
+      <h2>Gracias</h2>
+      <p>Con cariño, Luis & Blanca</p>
+    </section>
+
+  </main>
+
+
+  <!--==========================
+GALERÍA
+===========================-->
+
+<div class="gallery-modal" id="galleryModal">
+
+    <span class="gallery-close">&times;</span>
+
+    <img id="galleryImage">
+
+    <button class="gallery-prev">&#10094;</button>
+
+    <button class="gallery-next">&#10095;</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
