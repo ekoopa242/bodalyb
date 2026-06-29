@@ -22,7 +22,7 @@ body {
   color: var(--text);
   background:
     linear-gradient(rgba(1, 35, 30, .68), rgba(1, 35, 30, .78)),
-    url("assets/img/pareja.jpg");
+    url("assets/img/pareja.webp");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
