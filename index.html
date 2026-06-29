@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boda Luis & Blanca</title>
@@ -14,17 +20,21 @@
 </head>
 <body>
 
-  <header class="hero">
+  <header class="hero" id="hero">
     <div class="hero-content">
       <div class="monogram">LB</div>
+
       <p class="subtitle">Nos casamos</p>
       <h1>Luis <span>&</span> Blanca</h1>
       <p class="date">05 septiembre 2026</p>
-      <div class="scroll-down">↓</div>
+      <button id="abrirInvitacion" class="gold-btn">
+        Abrir invitación
+    </button>
     </div>
+    
   </header>
 
-  <main>
+  <main id="contenido" class="hidden">
 
     <section class="intro section-card">
       <p class="section-label">Con mucha alegría</p>
@@ -54,7 +64,11 @@
           <p><strong>Sábado 05 de septiembre de 2026</strong></p>
           <p>5:00 PM</p>
           <p>UNICAH Santiago Apóstol</p>
-          <a href="#" class="gold-btn">Ver ubicación</a>
+          <a href="AQUI_VA_EL_LINK_DE_GOOGLE_MAPS"
+            target="_blank"
+            class="gold-btn">
+            📍 Ver ubicación
+          </a>
         </div>
       </div>
 
@@ -67,63 +81,41 @@
           <p><strong>Sábado 05 de septiembre de 2026</strong></p>
           <p>7:00 PM</p>
           <p>Salón Colegio de Abogados</p>
-          <a href="#" class="gold-btn">Ver ubicación</a>
+          <a href="AQUI_VA_EL_LINK_DE_GOOGLE_MAPS"
+            target="_blank"
+            class="gold-btn">
+            📍 Ver ubicación
+          </a>
         </div>
       </div>
 
       <section class="section-card">
 
-    <p class="section-label">Nuestros momentos</p>
+        <p class="section-label">Nuestros recuerdos</p>
 
-    <h2>Galería</h2>
+        <h2>Galería</h2>
 
-    <div class="swiper galeriaSwiper">
+        <div class="swiper miGaleria">
 
-        <div class="swiper-wrapper">
+            <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
-                <img src="assets/img/galeria/foto1.jpg" class="gallery-item">
+                <div class="swiper-slide"><img src="assets/img/galeria/foto1.jpg" class="gallery-item"></div>
+                <div class="swiper-slide"><img src="assets/img/galeria/foto2.jpg" class="gallery-item"></div>
+                <div class="swiper-slide"><img src="assets/img/galeria/foto3.jpg" class="gallery-item"></div>
+                <div class="swiper-slide"><img src="assets/img/galeria/foto4.jpg" class="gallery-item"></div>
+                <div class="swiper-slide"><img src="assets/img/galeria/foto5.jpg" class="gallery-item"></div>
+                <div class="swiper-slide"><img src="assets/img/galeria/foto6.jpg" class="gallery-item"></div>
+                <div class="swiper-slide"><img src="assets/img/galeria/foto7.jpg" class="gallery-item"></div>
+                <div class="swiper-slide"><img src="assets/img/galeria/foto8.jpg" class="gallery-item"></div>
+                <div class="swiper-slide"><img src="assets/img/galeria/foto9.jpg" class="gallery-item"></div>
+
             </div>
 
-            <div class="swiper-slide">
-                <img src="assets/img/galeria/foto2.jpg" class="gallery-item">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="assets/img/galeria/foto3.jpg" class="gallery-item">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="assets/img/galeria/foto4.jpg" class="gallery-item">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="assets/img/galeria/foto5.jpg" class="gallery-item">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="assets/img/galeria/foto6.jpg" class="gallery-item">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="assets/img/galeria/foto7.jpg" class="gallery-item">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="assets/img/galeria/foto8.jpg" class="gallery-item">
-            </div>
-
-            <div class="swiper-slide">
-                <img src="assets/img/galeria/foto9.jpg" class="gallery-item">
-            </div>
+            <div class="swiper-pagination"></div>
 
         </div>
 
-        <div class="swiper-pagination"></div>
-
-    </div>
-
-</section>
+      </section>
 
       <div class="accordion-item">
         <button class="accordion-header">
@@ -225,8 +217,18 @@ GALERÍA
 
 </div>
 
+<audio id="music" loop>
+    <source src="assets/music/cancion.mp3" type="audio/mpeg">
+</audio>
+
+<button id="musicButton" class="music-btn">
+    <i class="fa-solid fa-volume-high"></i>
+</button>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
+
+
 
 </body>
 </html>

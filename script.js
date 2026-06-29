@@ -162,3 +162,97 @@ slidesPerView:3,
 }
 
 });
+
+new Swiper(".miGaleria",{
+
+loop:true,
+
+autoplay:{
+delay:3000,
+},
+
+spaceBetween:20,
+
+pagination:{
+el:".swiper-pagination",
+clickable:true,
+},
+
+breakpoints:{
+
+0:{
+slidesPerView:1
+},
+
+768:{
+slidesPerView:2
+},
+
+1200:{
+slidesPerView:3
+}
+
+}
+
+});
+
+/*==========================
+MÚSICA
+==========================*/
+
+const music = document.getElementById("music");
+const musicButton = document.getElementById("musicButton");
+
+let musicStarted = false;
+
+
+
+// Botón de reproducir / pausar
+
+musicButton.addEventListener("click", () => {
+
+    if (music.paused) {
+
+        music.play();
+        musicButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+
+    } else {
+
+        music.pause();
+        musicButton.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+
+    }
+
+});
+
+const hero = document.getElementById("hero");
+
+const contenido = document.getElementById("contenido");
+
+const abrir = document.getElementById("abrirInvitacion");
+
+abrir.addEventListener("click",()=>{
+
+    music.play();
+
+    hero.style.opacity="0";
+
+    setTimeout(()=>{
+
+        hero.style.display="none";
+
+        contenido.classList.remove("hidden");
+
+        musicButton.style.display="flex";
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    },700);
+
+});
