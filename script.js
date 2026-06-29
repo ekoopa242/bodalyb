@@ -71,13 +71,13 @@ foto.addEventListener("click",()=>{
 
 actual=index;
 
-abrir();
+abrirGaleria();
 
 });
 
 });
 
-function abrir(){
+function abrirGaleria(){
 
 modal.style.display="flex";
 
@@ -111,7 +111,7 @@ actual=0;
 
 }
 
-abrir();
+abrirGaleria();
 
 }
 
@@ -125,7 +125,7 @@ actual=galeria.length-1;
 
 }
 
-abrir();
+abrirGaleria();
 
 }
 
@@ -197,9 +197,9 @@ const hero = document.getElementById("hero");
 
 const contenido = document.getElementById("contenido");
 
-const btnabrir = document.getElementById("abrirInvitacion");
+const btnAbrir = document.getElementById("abrirInvitacion");
 
-btnabrir.addEventListener("click",()=>{
+btnAbrir.addEventListener("click",()=>{
 
     music.play();
 
