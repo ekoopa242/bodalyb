@@ -224,3 +224,25 @@ btnAbrir.addEventListener("click",()=>{
     },700);
 
 });
+
+
+
+const rsvpForm = document.getElementById("rsvpForm");
+
+rsvpForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(rsvpForm);
+
+  fetch("https://script.google.com/macros/s/AKfycbztgVELMlMj2wXz-_Z8z_8_PC3UNfEzzFmo_Kgj8zkO0zwoWDJkSoGzypNi_NT_5Io/exec", {
+    method: "POST",
+    body: formData
+  })
+  .then(() => {
+    alert("Gracias, tu confirmación fue registrada.");
+    rsvpForm.reset();
+  })
+  .catch(() => {
+    alert("Hubo un error. Intenta nuevamente.");
+  });
+});
