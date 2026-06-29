@@ -234,7 +234,7 @@ rsvpForm.addEventListener("submit", function(e) {
 
   const formData = new FormData(rsvpForm);
 
-  fetch("https://script.google.com/macros/s/AKfycbxddFz2zk93l6KgXouXRs6IlfXY6pQ0JhDjpASETd-ID07fO2T_ZUHKmjnaqSIEdA/exec", {
+  fetch("https://script.google.com/macros/s/AKfycbztgVELMlMj2wXz-_Z8z_8_PC3UNfEzzFmo_Kgj8zkO0zwoWDJkSoGzypNi_NT_5Io/exec", {
     method: "POST",
     mode: "no-cors",
     body: formData
