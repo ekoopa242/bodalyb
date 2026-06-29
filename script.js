@@ -129,39 +129,7 @@ abrir();
 
 }
 
-new Swiper(".galeriaSwiper",{
 
-loop:true,
-
-spaceBetween:20,
-
-autoplay:{
-delay:3500,
-disableOnInteraction:false,
-},
-
-pagination:{
-el:".swiper-pagination",
-clickable:true,
-},
-
-breakpoints:{
-
-0:{
-slidesPerView:1,
-},
-
-768:{
-slidesPerView:2,
-},
-
-1100:{
-slidesPerView:3,
-}
-
-}
-
-});
 
 new Swiper(".miGaleria",{
 
@@ -229,9 +197,9 @@ const hero = document.getElementById("hero");
 
 const contenido = document.getElementById("contenido");
 
-const abrir = document.getElementById("abrirInvitacion");
+const btnabrir = document.getElementById("abrirInvitacion");
 
-abrir.addEventListener("click",()=>{
+btnabrir.addEventListener("click",()=>{
 
     music.play();
 
