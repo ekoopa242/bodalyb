@@ -888,3 +888,46 @@ transform:scale(1.08);
 background:#046A5B;
 
 }
+
+.accordion-icon{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    border:2px solid #C9A227;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#C9A227;
+
+    background:rgba(1,77,64,.45);
+
+    transition:.35s ease;
+
+    flex-shrink:0;
+
+}
+
+.accordion-icon i{
+
+    transition:.35s ease;
+
+}
+
+.accordion-item.active .accordion-icon{
+
+    background:#C9A227;
+
+    color:#014D40;
+
+}
+
+.accordion-item.active .accordion-icon i{
+
+    transform:rotate(180deg);
+
+}
